@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status Update</title>
+</head>
+
+<body
+    style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 40px 20px;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0"
+                    style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <!-- Header -->
+                    <tr>
+                        <td
+                            style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); padding: 40px 30px; text-align: center;">
+                            <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 600;">PreOrda</h1>
+                        </td>
+                    </tr>
+
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+                            <h2 style="margin: 0 0 20px 0; color: #2c3e50; font-size: 24px; text-align: center;">Order
+                                Update</h2>
+                            <p style="margin: 0 0 20px 0; color: #666666; font-size: 16px; line-height: 1.6;">
+                                Hi {{customer_name}},
+                            </p>
+                            <p style="margin: 0 0 30px 0; color: #666666; font-size: 16px; line-height: 1.6;">
+                                The status of your order <strong>#{{order_id}}</strong> has been updated to:
+                            </p>
+
+                            <!-- Status Box -->
+                            <div style="text-align: center; margin: 30px 0;">
+                                <span
+                                    style="display: inline-block; padding: 12px 24px; background-color: #e3f2fd; color: #1976d2; border-radius: 50px; font-size: 18px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+                                    {{new_status}}
+                                </span>
+                            </div>
+
+                            <p style="margin: 0 0 30px 0; color: #666666; font-size: 16px; line-height: 1.6;">
+                                {{status_message}}
+                            </p>
+
+                            <!-- Track Order Button -->
+                            <table width="100%" cellpadding="0" cellspacing="0" style="margin: 30px 0;">
+                                <tr>
+                                    <td align="center">
+                                        <a href="{{tracking_url}}"
+                                            style="display: inline-block; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: #ffffff; text-decoration: none; padding: 15px 40px; border-radius: 8px; font-size: 16px; font-weight: 600;">
+                                            Track Your Order
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p
+                                style="margin: 25px 0 0 0; color: #666666; font-size: 14px; line-height: 1.6; text-align: center;">
+                                Questions? Contact us at <a href="mailto:{{support_email}}"
+                                    style="color: #3498db; text-decoration: none;">{{support_email}}</a>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td
+                            style="background-color: #f8f9fa; padding: 30px; text-align: center; border-top: 1px solid #e9ecef;">
+                            <p style="margin: 0 0 10px 0; color: #999999; font-size: 14px;">
+                                &copy; 2025 PreOrda. All rights reserved.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
